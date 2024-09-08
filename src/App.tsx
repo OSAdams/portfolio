@@ -1,8 +1,15 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+
 function App() {
 	return (
-		<div className="flex h-screen w-screen flex-col items-center justify-center bg-blue-300 font-bold">
-			<p className="text-6xl text-white">LearningFuze Vite React Template</p>
-		</div>
+		<>
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Home />} />
+				</Routes>
+			</BrowserRouter>
+		</>
 	);
 }
 
